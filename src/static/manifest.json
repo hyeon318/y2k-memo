@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "y2kMemo!",
+  "description": "You can use y2k style sticky memo.",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  },
+  "options_page": "/options.html",
+  "permissions": ["tabs", "bookmarks", "unlimitedStorage", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
