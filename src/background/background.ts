@@ -5,3 +5,4 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.bookmarks.onCreated.addListener(() => {
   console.log("I just bookmarked this page");
 });
+export {};

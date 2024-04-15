@@ -17,18 +17,15 @@
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/*!**************************************!*\
-  !*** ./src/background/background.ts ***!
-  \**************************************/
+/*!********************************************!*\
+  !*** ./src/contentScript/contentScript.ts ***!
+  \********************************************/
 __webpack_require__.r(__webpack_exports__);
-chrome.runtime.onInstalled.addListener(function () {
-    console.log("I just installed my chrome extension");
-});
-chrome.bookmarks.onCreated.addListener(function () {
-    console.log("I just bookmarked this page");
-});
+window.onload = function () {
+    console.log("I am from content script");
+};
 
 
 /******/ })()
 ;
-//# sourceMappingURL=background.js.map
+//# sourceMappingURL=contentScript.js.map

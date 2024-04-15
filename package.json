@@ -16,10 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack --config webpack.config.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "webpack --watch --progress --config webpack.config.ts"
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch --progress --config webpack.prod.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +53,7 @@
     "tailwindcss": "^3.4.3",
     "ts-loader": "^9.5.1",
     "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
   }
 }

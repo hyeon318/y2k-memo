@@ -16,5 +16,11 @@
   "permissions": ["tabs", "bookmarks", "unlimitedStorage", "storage"],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }
