@@ -10,7 +10,11 @@
   },
   "action": {
     "default_title": "Click Me",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
   },
   "options_page": "/options.html",
   "permissions": ["tabs", "bookmarks", "unlimitedStorage", "storage"],
@@ -19,7 +23,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["contentScript.js"]
     }
   ]
